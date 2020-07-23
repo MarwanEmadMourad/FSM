@@ -5,6 +5,13 @@
 #define GoE 2
 #define WaitE 3
 
+//Traffic Lights of a road intersection which aims serve cars whenever they are there.
+//if a car comes from east direction,eastern traffic Light should turn green to let the car pass and the northern traffic lights becomes red and vice versa.
+//if a car came from both directions at the same time; one should pass and the other will  stop
+
+//PE0-PE1-->the car sensors to check wether they are here or not
+//PB0-PB5-->the two traffic lights represented as 6 lEDS.
+
 
 void PORTE_PORTB_init(void){
 
